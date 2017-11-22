@@ -1,0 +1,11 @@
+<StackLayout>
+    <Image src="res://icon" stretch="none" horizontalAlignment="center" class="bordeInferior"></Image>
+
+    <TextField hint="Nombre de Usuario" keyboardType="email" [(ngModel)]="email"
+               autocorrect="false" autocapitalizationType="none"></TextField>
+    <TextField hint="Contraseña" secure="true" [(ngModel)]="password"></TextField>
+
+    <Button [text]="'¡A disfrutar!'" class="submit-button" (tap)="submit()"></Button>
+
+    <Button [text]="'¿Has olvidado tu contraseña?'" class="submit-button"></Button>
+</StackLayout>
